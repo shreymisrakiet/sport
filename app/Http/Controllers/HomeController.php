@@ -7,22 +7,46 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\RedirectResponse;
+
+
 use App\User;
 
 
+
+
+
 class HomeController extends Controller
+
 {
+
+    
+    
     
     
     /**
     
+    
+    
     * Create a new controller instance.
+    
+    
     
     *
     
+    
+    
     * @return void
     
+    
+    
+    
     */
+    
+    
+    
+    
+    
+    
     
     public function __construct()
     
