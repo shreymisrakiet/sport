@@ -3,17 +3,31 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
+
 use Illuminate\Support\Facades\DB;
+
 use App\Http\Controllers\Controller;
+
 use Illuminate\Support\Facades\Input;
+
 use App\Http\Requests;
 
+
+
 class AjaxController extends Controller
+
+
 {
+
 	public function getName()
+	
 	{
+	
 		if(!Auth::guest()){
 
+			
+			
 			$hash1=Auth::user()->email;
         	$prim_detail=DB::table('studentprimdetail')->where('Uni_Roll_No',$hash1)->orWhere('Lib_Card_No',$hash1)->select('SEX','Branch_id','Lib_Card_No')->get();
 	 		
