@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
+
 class adminController extends Controller
 
 {
